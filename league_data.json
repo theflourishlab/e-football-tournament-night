@@ -1,0 +1,96 @@
+{
+  "players": [
+    {
+      "id": "cffb2d56-a194-4d3a-b016-9805a5f3e8ee",
+      "name": "Flourish",
+      "played": 3,
+      "won": 2,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 13,
+      "goalsAgainst": 11,
+      "points": 6
+    },
+    {
+      "id": "2ea54140-4bf9-47b3-b2f2-94f2880442b5",
+      "name": "Musa",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 4,
+      "goalsAgainst": 7,
+      "points": 0
+    },
+    {
+      "id": "1833f54a-6d86-48bc-b4c3-67e66cf4ba4d",
+      "name": "Olamide",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "points": 0
+    },
+    {
+      "id": "5234f0b5-56c9-4576-b00d-ef381ff962dd",
+      "name": "Emma T",
+      "played": 1,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 5,
+      "goalsAgainst": 2,
+      "points": 3
+    },
+    {
+      "id": "6b670cfa-1eb2-4133-837e-ddb7392df3d7",
+      "name": "Tobi",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 4,
+      "points": 0
+    },
+    {
+      "id": "0247cd0f-fadc-4d14-b247-6f74a8ed9d64",
+      "name": "Emma S",
+      "played": 0,
+      "won": 0,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "points": 0
+    }
+  ],
+  "matches": [
+    {
+      "id": "3a7a5f13-4b5c-4b3d-a660-495a054d39e5",
+      "date": "2025-11-21T02:59:17.457Z",
+      "homePlayerId": "cffb2d56-a194-4d3a-b016-9805a5f3e8ee",
+      "awayPlayerId": "2ea54140-4bf9-47b3-b2f2-94f2880442b5",
+      "homeScore": 7,
+      "awayScore": 4
+    },
+    {
+      "id": "4d84b80e-2583-4a35-a005-9f09d9945a89",
+      "date": "2025-11-21T03:05:38.569Z",
+      "homePlayerId": "cffb2d56-a194-4d3a-b016-9805a5f3e8ee",
+      "awayPlayerId": "6b670cfa-1eb2-4133-837e-ddb7392df3d7",
+      "homeScore": 4,
+      "awayScore": 2
+    },
+    {
+      "id": "43656444-88f5-4fbb-bcb7-96c036fa8b6c",
+      "date": "2025-11-21T03:06:18.651Z",
+      "homePlayerId": "cffb2d56-a194-4d3a-b016-9805a5f3e8ee",
+      "awayPlayerId": "5234f0b5-56c9-4576-b00d-ef381ff962dd",
+      "homeScore": 2,
+      "awayScore": 5
+    }
+  ]
+}
