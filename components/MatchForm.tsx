@@ -55,7 +55,7 @@ export function MatchForm({ players, onSuccess }: MatchFormProps) {
             </CardHeader>
             <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-2 gap-8 items-end">
+                    <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-8 items-end">
                         {/* Home Team */}
                         <div className="space-y-2">
                             <Label>Home Team</Label>
@@ -74,26 +74,26 @@ export function MatchForm({ players, onSuccess }: MatchFormProps) {
                         </div>
 
                         {/* Score */}
-                        <div className="flex items-center gap-4 justify-center">
-                            <div className="space-y-2 text-center w-20">
+                        <div className="flex items-center gap-4 justify-center pb-0.5">
+                            <div className="space-y-2 text-center w-16 md:w-20">
                                 <Label className="text-xs text-muted-foreground">Home</Label>
                                 <Input
                                     type="number"
                                     min="0"
                                     value={homeScore}
                                     onChange={e => setHomeScore(e.target.value)}
-                                    className="text-center text-2xl font-bold h-14"
+                                    className="text-center text-xl md:text-2xl font-bold h-12 md:h-14"
                                 />
                             </div>
-                            <span className="text-2xl font-bold text-muted-foreground">:</span>
-                            <div className="space-y-2 text-center w-20">
+                            <span className="text-xl md:text-2xl font-bold text-muted-foreground pt-6">:</span>
+                            <div className="space-y-2 text-center w-16 md:w-20">
                                 <Label className="text-xs text-muted-foreground">Away</Label>
                                 <Input
                                     type="number"
                                     min="0"
                                     value={awayScore}
                                     onChange={e => setAwayScore(e.target.value)}
-                                    className="text-center text-2xl font-bold h-14"
+                                    className="text-center text-xl md:text-2xl font-bold h-12 md:h-14"
                                 />
                             </div>
                         </div>

@@ -27,11 +27,13 @@ export interface Match {
 export interface LeagueData {
     players: Player[];
     matches: Match[];
+    fixtures: Match[];
 }
 
 const INITIAL_DATA: LeagueData = {
     players: [],
     matches: [],
+    fixtures: [],
 };
 
 export async function getLeagueData(): Promise<LeagueData> {

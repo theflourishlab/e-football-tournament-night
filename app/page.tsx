@@ -2,6 +2,9 @@ import { getLeagueData } from '@/lib/storage';
 import { LeagueTable } from '@/components/LeagueTable';
 import { MatchForm } from '@/components/MatchForm';
 import { PlayerForm } from '@/components/PlayerForm';
+import { ResetLeagueButton } from '@/components/ResetLeagueButton';
+import { GenerateFixturesButton } from '@/components/GenerateFixturesButton';
+import { FixtureList } from '@/components/FixtureList';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Trophy } from 'lucide-react';
 
@@ -34,13 +37,22 @@ export default async function Home() {
 
           <div className="space-y-6">
             <Tabs defaultValue="match" className="w-full">
-              <TabsList className="grid w-full grid-cols-2">
+              <TabsList className="grid w-full grid-cols-3">
                 <TabsTrigger value="match">Record Match</TabsTrigger>
+                <TabsTrigger value="fixtures">Fixtures</TabsTrigger>
                 <TabsTrigger value="players">Manage Players</TabsTrigger>
               </TabsList>
               <TabsContent value="match" className="mt-4">
                 <div className="rounded-xl border bg-card text-card-foreground shadow-sm">
                   <MatchForm players={data.players} />
+                </div>
+              </TabsContent>
+              <TabsContent value="fixtures" className="mt-4">
+                <div className="space-y-4">
+                  <div className="flex justify-end">
+                    <GenerateFixturesButton />
+                  </div>
+                  <FixtureList fixtures={data.fixtures} players={data.players} />
                 </div>
               </TabsContent>
               <TabsContent value="players" className="mt-4">
@@ -50,6 +62,7 @@ export default async function Home() {
                     <p>Total Players: {data.players.length}</p>
                     <p>Total Matches: {data.matches.length}</p>
                   </div>
+                  <ResetLeagueButton />
                 </div>
               </TabsContent>
             </Tabs>
